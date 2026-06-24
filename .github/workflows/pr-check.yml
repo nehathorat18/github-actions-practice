@@ -1,7 +1,7 @@
 name: prcheck
 on:
   schedule:
-    - cron: '20 12 * * *'  
+    - cron: '23 0 * * *'  
 
 jobs:
   pr-check:
