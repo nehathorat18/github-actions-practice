@@ -1,6 +1,6 @@
 name: Hello-2
 on:
-  push:
+  workflow_call:
 jobs:
   greet:
     runs-on: ubuntu-latest 
