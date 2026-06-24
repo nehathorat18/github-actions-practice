@@ -1,7 +1,7 @@
 name: prcheck
-on: 
-  pull_request:
-    branches: [main]
+on:
+  schedule:
+    - cron: '20 12 * * *'  
 
 jobs:
   pr-check:
