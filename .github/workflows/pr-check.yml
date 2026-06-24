@@ -11,3 +11,5 @@ jobs:
         run: echo "PR check running for branch ${{ github.head_ref }}"
       - name: Print date
         run: date
+      - name: print check
+        run: echo "Checking pr request changes"
