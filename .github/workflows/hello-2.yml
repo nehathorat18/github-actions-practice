@@ -1,4 +1,4 @@
-name: Hello
+name: Hello-2
 on:
   push:
 jobs:
@@ -9,3 +9,14 @@ jobs:
         uses: actions/checkout@v7
       - name: say hello
         run: echo "Hello from GitHub Actions!"
+      - name: print current date and time
+        run: date
+      - name: print branch name
+        run: |
+          echo "Branch name: ${{ github.ref_name }}"
+      - name: list files in the repository
+        run: ls -la
+      - name: print runner operating system
+        run: |
+          echo "Runner OS: ${{ runner.os }}"
+        
